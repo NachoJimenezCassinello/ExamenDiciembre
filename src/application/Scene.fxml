@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="rootPane" prefHeight="600.0" prefWidth="400.0" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.ControladorScene">
+   <children>
+      <Pane fx:id="Pane1" layoutX="50.0" layoutY="80.0" prefHeight="436.0" prefWidth="293.0" style="-fx-background-color: white; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #00ad74; -fx-background-radius: 50 50 00 00px;" text="Ignacio Jimenez" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="105.0" layoutY="188.0" promptText="usermail" />
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="105.0" layoutY="254.0" promptText="password" />
+            <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="61.0" layoutY="182.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@recursos/email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="61.0" layoutY="248.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@recursos/Security-Password.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Imagen" fitHeight="63.0" fitWidth="61.0" layoutX="120.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@recursos/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" cache="true" layoutX="61.0" layoutY="343.0" style="-fx-background-color: #00ad74; -fx-background-radius: 25px;" text="SIGNIN" textFill="WHITE">
+               <padding>
+                  <Insets bottom="7.0" left="12.5" right="12.5" top="7.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="171.0" layoutY="343.0" onAction="#nextAction" style="-fx-background-color: #00ad74; -fx-background-radius: 25px;" text="SIGNUP" textFill="WHITE">
+               <padding>
+                  <Insets bottom="7.0" left="12.5" right="12.5" top="7.0" />
+               </padding>
+               <tooltip>
+                  <Tooltip text="Segunda Ventana">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" prefHeight="297.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #00ad74; -fx-background-radius: 50 50 00 00px;" text="Ignacio Jimenez" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Imagen1" fitHeight="63.0" fitWidth="61.0" layoutX="120.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@recursos/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="100.0" layoutY="366.0" onAction="#backAction" style="-fx-background-color: #00ad74; -fx-background-radius: 25px;" text="Aceptar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="83.0" layoutY="153.0" promptText="nickname" />
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="83.0" layoutY="195.0" promptText="usermail" />
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="83.0" layoutY="237.0" promptText="password" />
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="83.0" layoutY="283.0" promptText="repeat password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
